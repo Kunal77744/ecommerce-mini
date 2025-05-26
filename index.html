@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Shopkaro - Your Online Store</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Shopkaro</div>
+        <input type="text" placeholder="Search products..." class="search-bar" />
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover the Latest Trends</h1>
+        <p>Shop the best products in electronics, fashion & more.</p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+    </section>
+
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-list">
+            <button class="btn btn-secondary">Electronics</button>
+            <button class="btn btn-secondary">Fashion</button>
+            <button class="btn btn-secondary">Home</button>
+            <button class="btn btn-secondary">Beauty</button>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=400&q=80" alt="Smartphone" />
+                <h3>Smartphone</h3>
+                <p>$299</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=400&q=80" alt="Headphones" />
+                <h3>Headphones</h3>
+                <p>$99</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=400&q=80" alt="Watch" />
+                <h3>Premium Watch</h3>
+                <p>$199</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=400&q=80" alt="Laptop" />
+                <h3>Gaming Laptop</h3>
+                <p>$1299</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?auto=format&fit=crop&w=400&q=80" alt="Shoes" />
+                <h3>Running Shoes</h3>
+                <p>$79</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Backpack" />
+                <h3>Travel Backpack</h3>
+                <p>$59</p>
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Shopkaro. Your trusted online store.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
