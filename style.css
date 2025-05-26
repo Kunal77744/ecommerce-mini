@@ -1,0 +1,236 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #004aad;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+    padding: 8px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #004aad;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+    background-color: #004aad;
+    color: white;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1496180727794-817822f65950?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    color: rgb(224, 179, 179);
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 40px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    cursor: pointer;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #004aad;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #003a82;
+}
+
+.btn-secondary {
+    background-color: #e1e7f5;
+    color: #004aad;
+    margin: 5px;
+}
+
+.btn-secondary:hover {
+    background-color: #c2d1f0;
+}
+
+.categories {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.categories h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #004aad;
+}
+
+.category-list button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.products {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #004aad;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin-bottom: 8px;
+    color: #004aad;
+}
+
+.product-card p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: #004aad;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    max-width: 80%;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    font-size: 1rem;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .search-bar {
+        margin: 0;
+        width: 100%;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .product-card img {
+        height: 140px;
+    }
+}
